@@ -1232,6 +1232,18 @@ public interface SPECCHIOClient {
 	public int insertClosestTargetReferenceLink(int target_id, ArrayList<Integer> reference_ids) throws SPECCHIOClientException;
 
 	
+	/**
+	 * Insert an instrument node into the database.
+	 * 
+	 * @param InstrumentNode type
+	 * 
+	 * @return an instrument_node_id
+	 * 
+	 * @throws SPECCHIOClientException
+	 */
+	
+	public int insertInstrumentNode(InstrumentNode instrument_node) throws SPECCHIOClientException;
+
 	
 	/**
 	 * Insert a target-reference links.

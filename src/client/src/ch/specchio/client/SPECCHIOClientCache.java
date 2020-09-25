@@ -1781,6 +1781,22 @@ public class SPECCHIOClientCache implements SPECCHIOClient {
 		
 	}
 	
+	/**
+	 * Insert instrument node.
+	 * 
+	 * @param an InstrumentNode object
+	 * 
+	 * @return the id of the new instrument node
+	 * 
+	 */
+	
+	public int insertInstrumentNode(InstrumentNode instrument_node) throws SPECCHIOClientException {
+		
+		return realClient.insertInstrumentNode(instrument_node);
+		
+	}
+	
+	
 	
 	/**
 	 * Insert a picture of an instrument into the database.

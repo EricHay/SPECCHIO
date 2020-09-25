@@ -2179,7 +2179,7 @@ public class SPECCHIOWebClient implements SPECCHIOClient {
 	/**
 	 * Insert a new institute into the database
 	 * 
-	 * @param institute	an Instite object describing the new institute
+	 * @param institute	an Institute object describing the new institute
 	 * 
 	 * @return the identifier of the new institute
 	 */
@@ -2198,6 +2198,21 @@ public class SPECCHIOWebClient implements SPECCHIOClient {
 	public void insertInstrumentCalibration(Calibration c) throws SPECCHIOWebClientException {
 		
 		postForString("instrumentation", "insertInstrumentCalibration", c);
+		
+	}
+	
+	/**
+	 * Insert instrument node.
+	 * 
+	 * @param an InstrumentNode object
+	 * 
+	 * @return the id of the new instrument node
+	 * 
+	 */
+	
+	public int insertInstrumentNode(InstrumentNode instrument_node) throws SPECCHIOClientException {
+		
+		return postForInteger("uncertainty", "insertInstrumentNode", instrument_node);
 		
 	}
 	
